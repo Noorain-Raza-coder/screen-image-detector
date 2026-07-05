@@ -1,0 +1,31 @@
+# ---- Datasets (large, not pushed) ----
+dataset/
+Dataset_structure/
+roboflow_training_dataset/
+
+# ---- Training runs & benchmarks ----
+runs/
+tests/
+
+# ---- Model weights: keep ONNX, ignore all PyTorch .pt ----
+# (artifacts/model.onnx IS tracked; artifacts/model.pt and root .pt files are not)
+*.pt
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+venv/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- Kept on purpose (documented for clarity) ----
+# testing_dataset/      -> pushed
+# artifacts/model.onnx  -> pushed
+# *.py, requirements.txt, README.md -> pushed

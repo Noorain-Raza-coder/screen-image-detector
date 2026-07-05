@@ -1,0 +1,19 @@
+# Python: 3.10 : this project is created on conda environment
+#
+# Install:
+#   conda create -n env-yolo python=3.10
+#   conda activate env-yolo
+#   pip install -r requirements.txt
+# ============================================================
+
+# --- Inference (predict.py, ONNX backend — default, lightweight) ---
+onnxruntime==1.23.2
+numpy==2.2.6
+Pillow==12.2.0
+
+# --- Training / export / "pt" inference backend ---
+ultralytics==8.4.75
+torch==2.12.1
+torchvision==0.27.1
+onnx==1.22.0
+opencv-python==4.13.0.92
