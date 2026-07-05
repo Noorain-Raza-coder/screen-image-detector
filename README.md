@@ -27,7 +27,7 @@ a curated dataset of real product photos vs. photos of those products displayed 
 
 - **Two output classes:** `real_image` (0) and `screen_image` (1).
 - **Two runtime backends:**
-  - **ONNX** (default) — no PyTorch needed, fast startup, ideal for on-device / CPU.
+  - **ONNX** (default) — no PyTorch needed, fast startup, ideal for on-device.
   - **PyTorch (.pt)** — the native Ultralytics model, used for training, export, and GPU inference.
 - Final model: **YOLO26s (classification)** — best accuracy among the variants tested.
 - **Accuracy: ~93–95%** (47/49 correct on the held-out test set; 2 misclassified).
@@ -202,7 +202,7 @@ the L4's 24 GB — a single GPU could run several concurrent model instances or 
 
 ### 8.2 Cost per Image
 
-**On-device (phone, CPU):** effectively **$0 per image** — inference runs locally via the ONNX
+**On-device (phone):** effectively **$0 per image** — inference runs locally via the ONNX
 model, with no server round-trip or per-request billing.
 
 **Cloud server (GPU, NVIDIA L4), if run centrally instead of on-device:**
